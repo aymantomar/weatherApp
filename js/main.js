@@ -37,7 +37,7 @@ function displayTodayWeather(WeatherResLocation, WeatherResCurrent) {
   <h6 class="p-3">${WeatherResLocation?.name}</h6>
   <div class="pt-3 ps-3 pe-3 d-flex justify-content-between">
     <div class="font80">${WeatherResCurrent?.temp_c}<sup>o</sup> c</div>
-    <div> <img class="logoImg" src="${WeatherResCurrent?.condition?.icon}" /></div>
+    <div> <img class="logoImg" src="https:${WeatherResCurrent?.condition?.icon}" /></div>
     </div>
     <h6 class="blueText px-3">${WeatherResCurrent?.condition?.text}</h6>
     <div class="d-flex mt-4 justify-content-around">
@@ -61,7 +61,7 @@ function displayOtherDay(otherDay) {
     }">
     <div class="headerWeather">${dateDay}</div>
     <div class="p-3 text-center">
-      <img src="${otherDay[i]?.day?.condition.icon}" alt="" srcset="" />
+      <img src="https:${otherDay[i]?.day?.condition.icon}" alt="" srcset="" />
       <div class="mt-4">
         <h4>${otherDay[i]?.day?.maxtemp_c} <sup>o</sup>C</h4>
         <h6>${otherDay[i]?.day?.mintemp_c} <sup>o</sup>C</h6>
