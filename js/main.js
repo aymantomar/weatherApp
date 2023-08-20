@@ -10,7 +10,7 @@ input.addEventListener("keyup", function (e) {
 
 async function getData(countryId = "cairo") {
   let data = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=c13ed42657344d6780b214859231508&q=${countryId}&days=2`
+    `https://api.weatherapi.com/v1/forecast.json?key=c13ed42657344d6780b214859231508&q=${countryId}&days=2`
   );
   let res = await data.json();
   displayTodayWeather(res.location, res.current);
